@@ -23,7 +23,10 @@ def updatesitelist(args):
         myfile.write(line)
     myfile.close()
     if len(changedlist) > 0:
+        print "The following items have changed:"
+        print changedlist
         return changedlist
+    print "No changes to report."
     return
 
 
