@@ -17,6 +17,7 @@ Command line scripts
 "addWebsite.py" - allows you to add a website to the list of monitored websites
 "scanChanges.py - this checks each website for changes and prints whether they have changed or not
 Run the two scripts as so
+
     ./addWebsite.py
 
     ./scanChanges.py
@@ -24,3 +25,5 @@ Run the two scripts as so
 Windows Desktop Notifier
 -------------------------
 "main.py" - Run this to continutally check the websites on the list for updates every minute. If one changes, a notification will popup in the notification manager of windows alerting of the changed site.
+
+    ./main.py
