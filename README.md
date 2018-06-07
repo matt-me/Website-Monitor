@@ -1,4 +1,5 @@
 This program is a set of scripts that scans a list of websites for changes in the background. It keeps those changes in the directory the program is run in a file called "list.txt"
+
 Installation
 =============
 The following is required to run this program:
