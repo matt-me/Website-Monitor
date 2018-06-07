@@ -6,7 +6,7 @@ def main():
 
 
 def updatesitelist(args):
-    myfile = open("list.txt", "r")
+    myfile = open(args + "data/list.txt", "r")
     changedlist = []
     lines = myfile.readlines()
     for i in range(0, len(lines), 2):
@@ -21,7 +21,7 @@ def updatesitelist(args):
     myfile = open(args + "data/list.txt", "w+")
     for line in lines:
         myfile.write(line)
-        myfile.close()
+    myfile.close()
     if len(changedlist) > 0:
         return changedlist
     return

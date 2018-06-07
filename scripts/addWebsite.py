@@ -1,5 +1,6 @@
 import urllib
 import hashlib
+import scanChanges
 
 
 def opensite(str_url):
@@ -25,6 +26,7 @@ def addsite(text, site, path):
             print "That website is already being monitored."
             if lines[i + 1][0:len(lines[i + 1]) - 1] != m.hexdigest():
                 print "But it has changed the last time we read it!"
+                scanChanges.updatesitelist("../")
             return
     myfile.write(site + "\n")
     myfile.write(m.hexdigest() + "\n")
