@@ -3,7 +3,7 @@ This program is a set of scripts that scans a list of websites for changes in th
 Installation
 =============
 The following is required to run this program:
-- Windows 10/8/7 (For the main desktop notifier)
+- Windows 10/8/7 (For the main desktop notifier. You do NOT need to be using Windows to use the command line scripts)
 - Python 2.7
 - wxPython 4.0.1
 
